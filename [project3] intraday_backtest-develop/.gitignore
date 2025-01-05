@@ -1,0 +1,5 @@
+.vscode/
+
+.sample_data/*.csv
+
+*.docx
