@@ -6,3 +6,4 @@ Plotly Dash is used to display the dashboard in a browser.
 <img src="images/dvol.PNG">
 <img src="images/term structure.PNG">
 <img src="images/vol surface.PNG">
+<img src="images/historical vol.PNG">
