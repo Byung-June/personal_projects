@@ -1,0 +1,127 @@
+/* public/style.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ── 그리드 레이아웃 ── */
+.dashboard {
+  display: grid;
+  grid-template-columns: 800px 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  padding: 16px;
+  justify-items: start;
+  align-items: start;
+}
+
+/* ── Balance & Greeks 카드 (좌측 상단) ── */
+.balance-group-card {
+  grid-column: 1;
+  grid-row: 1;
+  background: #f5f5f5;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.9em;
+}
+.balance-group-card h2 {
+  margin: 0 0 8px;
+  font-size: 1em;
+}
+.balance-wrapper {
+  display: grid;
+  gap: 8px;
+}
+
+/* ── Statistics 카드 (우측 상단) ── */
+.statistics-card {
+  grid-column: 2;
+  grid-row: 1;
+  background: #f5f5f5;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 12px;
+  justify-self: start;
+  width: 240px;
+  font-size: 0.9em;
+}
+.statistics-card h2 {
+  margin: 0 0 8px;
+  font-size: 1em;
+}
+.statistics-content p {
+  margin: 4px 0;
+  font-size: 0.85em;
+}
+
+/* ── Positions 카드 (좌측 하단) ── */
+.positions-card {
+  grid-column: 1;
+  grid-row: 2;
+  background: #f5f5f5;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.9em;
+}
+.positions-card h2 {
+  margin: 0 0 8px;
+  font-size: 1em;
+}
+.positions-wrapper .fut-info-card {
+  width: max-content;
+  justify-self: start;
+}
+
+/* ── Open Orders 카드 (우측 하단) ── */
+.open-orders-card {
+  grid-column: 2;
+  grid-row: 2;
+  background: #f5f5f5;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.9em;
+}
+.open-orders-card h2 {
+  margin: 0 0 8px;
+  font-size: 1em;
+}
+
+/* ── sub-card 공통 ── */
+.sub-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+}
+.sub-card h3 {
+  margin: 0 0 6px;
+  font-size: 0.9em;
+}
+
+/* ── 테이블 기본 스타일 ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85em;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+  text-align: right;
+}
+th {
+  background: #eee;
+  text-align: left;
+}
+
+/* ── 값 하이라이트 ── */
+td.positive {
+  color: green;
+}
+td.negative {
+  color: red;
+}
